@@ -2,6 +2,8 @@
 /* CSS Document */
 
 body {
-	background-image: url("/images/crodssant.jpg");
+	background-image: url("images/crodssant.jpg");
+	background-size: cover;
+	background-repeat:no-repeat
 }
 
