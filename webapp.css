@@ -1,3 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	background-image: url("images/crodssant.jpg");
+	background-size: cover;
+	background-repeat:no-repeat
+}
+
