@@ -16,7 +16,7 @@ function memeclicker() {
 	if( frame == 5 ) { frame = 0; }
 		else { frame = frame + 1; }
 	score = score + 1;
-	document.getElementById("score").value=score;
+	update_values();
 	document.getElementById("ugandan").firstChild.setAttribute("src", "frames/" + frame + ".png");
 }
 
@@ -77,7 +77,7 @@ function buy(sel) {
 			}
 			break;
 	}
-	document.getElementById("score").value=score;
+	update_values();
 }
 
 // Generation
@@ -90,10 +90,14 @@ window.onload = function() {
 
 function bonus() {
 	score += spaghett + (mistabean * 10) + (robloks * 100) + (flex_tape * 1000) + (de_wae * 10000);
-	document.getElementById("score").value=score;
+	update_values();
 }
 
 function nutbonus() {
 	score += nut;
-	document.getElementById("score").value=score;
+	update_values();
+}
+
+function update_values() {
+	document.getElementById("score").value=Math.floor(score);
 }
