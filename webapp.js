@@ -8,6 +8,9 @@ var frame = 0;
 var nut = 0;
 var spaghett = 0;
 var mistabean = 0;
+var robloks = 0;
+var flex_tape = 0;
+var de_wae = 0;
 
 function memeclicker() {
 	if( frame == 5 ) { frame = 0; }
@@ -46,6 +49,45 @@ function buy(sel) {
 				alert("not enough money!");
 			}
 			break;
+		case "robloks":
+			if( score >= 10000 ) {
+				score -=10000;
+				robloks++;
+			}
+			else {
+				alert("not enough money!");
+			}
+			break;
+		case "flex_tape":
+			if( score >= 100000 ) {
+				score -=100000;
+				flex_tape++;
+			}
+			else {
+				alert("not enough money!");
+			}
+			break;
+		case "de_wae":
+			if( score >= 1000000 ) {
+				score -=1000000;
+				de_wae++;
+			}
+			else {
+				alert("not enough money!");
+			}
+			break;
 	}
+	document.getElementById("score").value=score;
+}
+
+// Generation
+window.onload = function() {
+	// start looping the generator
+	setInterval(bonus, 1000);
+	// load cookies if they exist (they dont) (yet)
+};
+
+function bonus() {
+	score += (nut / 10) + (spaghett) + (mistabean * 10) + (robloks * 100) + (flex_tape * 1000) + (de_wae * 10000);
 	document.getElementById("score").value=score;
 }
