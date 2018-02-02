@@ -83,18 +83,12 @@ function buy(sel) {
 // Generation
 window.onload = function() {
 	// start looping the generator
-	setInterval(bonus, 500);
-	setInterval(nutbonus, 5000);
+	setInterval(bonus, 5);
 	// load cookies if they exist (they dont) (yet)
 };
 
 function bonus() {
-	score += spaghett + (mistabean * 10) + (robloks * 100) + (flex_tape * 1000) + (de_wae * 10000);
-	update_values();
-}
-
-function nutbonus() {
-	score += nut;
+	score += nut * 0.001 + spaghett *0.01 + mistabean * 0.1 + robloks + flex_tape * 10 + de_wae * 100;
 	update_values();
 }
 
