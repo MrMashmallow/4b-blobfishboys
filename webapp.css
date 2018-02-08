@@ -3,8 +3,8 @@
 
 body {
 	background-image: url("images/desert.png");
-	background-size: cover;
-	background-repeat:no-repeat;
+	background-size: 2000px;
+	background-repeat: round;
 	color: white;
 }
 
