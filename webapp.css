@@ -3,11 +3,12 @@
 
 body {
 	background-image: url("images/desert.png");
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	background-size: 2000px;
 	background-repeat: round;
-	color: white;
+	color: #9D978D;
+	 
 }
-
 
 button {
 	cursor:pointer;
