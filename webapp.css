@@ -2,10 +2,12 @@
 /* CSS Document */
 
 body {
+	 font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	background-image: url("images/desert.png");
 	background-size: 2000px;
 	background-repeat: round;
-	color: white;
+	color: black;
+	text-align: center;
 }
 
 
